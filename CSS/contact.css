@@ -1,0 +1,99 @@
+.contact-container {
+  padding: 1vw 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  background: var(--content-bg);
+  /* width: 8; */
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-info,
+.contact-form {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form {
+  max-width: 500px;
+  padding: 3em 2em;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+.text p:first-child {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.text p:last-child {
+  margin: 0.5em 0 0 0;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.form-item {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1em;
+  background-color: transparent;
+  color: #333;
+  outline: none;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #2e3b55;
+}
+
+.form-item button {
+  width: 100%;
+  padding: 0.75em;
+  background: #2e3b55;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-item button:hover {
+  background: #1e2a3d;
+}
