@@ -72,7 +72,7 @@
 .about-three-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 2vw 0;
 }
 .about-left {
@@ -110,7 +110,7 @@
 }
 .image-container {
   height: 70vh;
-  width: 120%;
+  width: 110%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -134,4 +134,33 @@
 .right-p p {
   width: 80%;
   line-height: 1.7rem;
+}
+
+.co-founders {
+  display: flex;
+  width: 85%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.co-founders img {
+  width: 450px;
+  height: 500px;
+  margin-bottom: 20px;
+  object-fit: cover;
+
+  transition: all 0.2s ease-out;
+}
+.co-left,
+.co-right {
+  text-align: center;
+}
+
+.co-left:hover img {
+  transform: scale(1.02);
+}
+
+.co-right:hover img {
+  transform: scale(1.02);
 }
