@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services: Brahmabyte</title>
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+        /* Custom styles for animations */
+        .left-right-container, .right-image-container {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px; /* Added margin between sections */
+        }
+
+        .six-left-title h3 {
+            color: #007bff; /* Blue heading color */
+        }
+
+        .six-left-p p {
+            color: #333; /* Dark text color */
+        }
+
+        /* Ensure equal padding and margin left/right for entire container */
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .col-lg-6{
+            margin:1rem !important;
+        }
+
+        @media (min-width: 768px) {
+            .row.mb-5 {
+                padding: 0 20px; /* Increase padding for larger screens */
+            }
+            .col-lg-6 .d-flex.justify-content-center {
+                flex-direction: row; /* Ensure text and image are in row on larger screens */
+            }
+            .col-lg-6 .left-right-container, 
+            .col-lg-6 .right-image-container {
+                width: 100%; /* Full width for text and image containers */
+            }
+        }
+
+        .fixed-image {
+            width: 100%; /* Set fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Example width for smaller screens */
+            margin-top: 20px; /* Adjust top margin as needed */
+        }
+
+    </style>
+       <!-- AOS CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+       <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/service.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="max-w-8xl container-fluid overflow-hidden mx-auto">
+            <!-- ------HEADER SECTION--------- -->
+    <header class="small-screen-header d-block d-md-none" style="background-color: #001c30;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                        <a href="index.html">
+                            <img src="../IMAGES/images/brahmabyte logo.png" alt="Brahmabyte lab logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 text-end">
+                    <!-- Bootstrap Dropdown component -->
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars fa-2x text-light"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item " href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="service.html" >Services</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item " href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Large screens (desktop and above) header -->
+    <header class="large-screen-header px-4 max-w-8xl d-none d-md-block hidden md-block lg-block" style="background-color: #001c30;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                        <a href="index.html">
+                            <img src="../IMAGES/images/brahmabyte logo.png" alt="Brahmabyte lab logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 text-center">
+                    <nav data-aos="zoom-in" data-aos-duration="1500">
+                        <ul class="nav d-flex flex-wrap justify-content-center align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+                <div class="col-md-2 text-end">
+                    <div class="header-btn" data-aos="zoom-in" data-aos-duration="1500">
+                        <a href="service.html" class="btn-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <!-- SERVICE HERO SECTION -->
+ <section class="service-hero-section">
+    <div class="service-hero-image" data-aos="fade-up" data-aos-duration="1500">
+        <img src="../IMAGES/images/pexels-fauxels-3182773.jpg" alt="">
+    </div>
+    <div class="service-hero-container" data-aos="fade-up" data-aos-duration="1500">
+        <div class="service-hero-text">
+            <h1>Company You can Trust with Your <span>Dreams</span></h1>
+        </div>
+        <div class="hire-btn">
+            <a href="#" class="btn-btn">Hire Developers</a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE SECTION TWO -->
+<section class="service-section-two py-5">
+    <div class="container">
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="mb-4">What Are We Offering?</h2>
+            <p>
+                At Brahmabyte Lab, we deliver high-quality digital solutions. Our services include app development, web development, and UI/UX design. Whether you need a mobile app, a responsive website, or an intuitive interface, our skilled team is here to bring your vision to life with innovative technology and creative design.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE SECTION THREE -->
+<div class="service-container">
+    <div class="container py-5 px-xl-100">
+        <!-- Website Development Section -->
+        <div class="d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="left-right-container" data-aos="fade-right">
+                        <div class="six-left">
+                            <div class="six-left-title">
+                                <h3>Website Development</h3>
+                            </div>
+                            <div class="six-left-p">
+                                <p>
+                                    Our web development services ensure your website is fast, secure, and user-friendly. We build responsive websites that look great on any device and are optimized for performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="right-image-container" data-aos="fade-left">
+                        <img src="../IMAGES/images/webdev.jpg" class="img-fluid fixed-image" alt="Website Development">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- App Development Section -->
+        <div class="d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="left-right-container" data-aos="fade-right">
+                        <div class="six-left">
+                            <div class="six-left-title">
+                                <h3>App Development</h3>
+                            </div>
+                            <div class="six-left-p">
+                                <p>
+                                    We create dynamic mobile apps that offer seamless user experiences. Our apps are designed to be intuitive, feature-rich, and compatible with both iOS and Android platforms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="right-image-container" data-aos="fade-left">
+                        <img src="../IMAGES/images/app development.webp" class="img-fluid fixed-image" alt="App Development">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- UI/UX Design Section -->
+        <div class="d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="left-right-container" data-aos="fade-right">
+                        <div class="six-left">
+                            <div class="six-left-title">
+                                <h3>UI/UX Design</h3>
+                            </div>
+                            <div class="six-left-p">
+                                <p>
+                                    Our UI/UX design services focus on creating interfaces that are both visually appealing and easy to use. We prioritize user experience to ensure your digital products are engaging and effective.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="right-image-container" data-aos="fade-left">
+                        <img src="../IMAGES/images/UX-UI-Design.jpg" class="img-fluid fixed-image" alt="UI/UX Design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- Counter Section -->
+<section class="service-section-two py-5">
+    <div class="container-fluid">
+        <div class="text-center mb-5">
+            <h2>Starting on the Journey to Excellence</h2>
+        </div>
+        <div class="section-two-container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 p-3  d-flex flex-column-reverse justify-content-center align-items-center " data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="count-box mb-3" style="background-color: blue; color: white; border-radius: 50%; height: 120px; width: 120px; display: flex; justify-content: center; align-items: center; position: relative; font-size: 1.5rem;">
+                        <div style="position: relative;">
+                            <span id="counter">0</span>
+                            <sup style="position: absolute; top: -0.5em; right: -0.5em; font-size: 0.8em;">+</sup>
+                        </div>
+                    </div>                    
+                    <h5>Happy Clients</h5>
+                </div>
+                <div class="col-md-3 col-6 p-3  d-flex flex-column-reverse justify-content-center align-items-center " data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="count-box mb-3" style="background-color: blue; color: white; border-radius: 50%; height: 120px; width: 120px; display: flex; justify-content: center; align-items: center; position: relative; font-size: 1.5rem;">
+                        <div style="position: relative;">
+                            <span id="counter2">0</span>
+                            <sup style="position: absolute; top: -0.5em; right: -0.5em; font-size: 0.8em;">+</sup>
+                        </div>
+                    </div>
+                    <h5>Experts</h5>
+                </div>
+                <div class="col-md-3 col-6 p-3  d-flex flex-column-reverse justify-content-center align-items-center " data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="count-box mb-3" style="background-color: blue; color: white; border-radius: 50%; height: 120px; width: 120px; display: flex; justify-content: center; align-items: center; position: relative; font-size: 1.5rem;">
+                        <div style="position: relative;">
+                            <span id="counter3">0</span>
+                            <sup style="position: absolute; top: -0.5em; right: -0.5em; font-size: 0.8em;">+</sup>
+                        </div>
+                    </div>
+                    <h5>Projects</h5>
+                </div>
+                <div class="col-md-3 col-6 p-3  d-flex flex-column-reverse justify-content-center align-items-center " data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="count-box mb-3" style="background-color: blue; color: white; border-radius: 50%; height: 120px; width: 120px; display: flex; justify-content: center; align-items: center; position: relative; font-size: 1.5rem;">
+                        <div style="position: relative;">
+                            <span id="counter4">0</span>
+                            <sup style="position: absolute; top: -0.5em; right: -0.5em; font-size: 0.8em;">+</sup>
+                        </div>
+                    </div>
+                    <h5>Experience</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="footer-one">
+                <div class="column" id="col-one">
+                    <div class="logo mb-3">
+                        <a href="index.html">
+                            <img src="../IMAGES/images/brahmabyte logo.png" alt="Brahmabyte lab logo">
+                        </a>
+                    </div>
+                    <div class="col-one-p">
+                        <p>
+                            At Brahmabyte Lab, we turn your ideas into amazing products. Our expert team is here to help your business.
+                        </p>
+                    </div>
+                </div>
+                <div class="column" id="col-two">
+                    <div class="links">
+                        <h2 style="font-weight: 700; margin-bottom: 5px !important;">Links</h2>
+                        <div class="footer-link">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="service.html">Services</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="about.html">About Us</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="col-three">
+                    <h2  style="font-weight: 700;  margin-bottom: 5px !important;">Contact & Address</h2>
+                    <div class="cont-adrs-text">
+                        9800000000
+                    </div>
+                    <div class="cont-adrs-text">
+                        abc@gmail.com
+                    </div>
+                    <div class="cont-adrs-text">
+                        Itahari, Sunsari
+                    </div>
+                    <div class="footer-icons mt-3">
+                        <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="mr-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-two">
+            <p >&#169;2024 copyright by Brahmabyte Lab. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- scroll to top btn -->
+    <a href="#" id="to-home"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+    <script src="../JS/service.js"></script>
+    <script src="../JS/script.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <!-- Custom JavaScript -->
+    <script>
+        // JavaScript to set active class based on current page
+        $(document).ready(function() {
+            var url = window.location.href;
+            $('.nav-link').removeClass('active');
+            $('.nav-link').each(function() {
+                if (url.indexOf($(this).attr('href')) !== -1) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+
+        // JavaScript to set active class based on current page
+        $(document).ready(function() {
+        var url = window.location.href;
+        $('.dropdown-item').removeClass('active');
+        $('.dropdown-item').each(function() {
+            if (url.indexOf($(this).attr('href')) !== -1) {
+                $(this).addClass('active');
+            }
+        });
+        });
+
+
+
+
+        // Toggle small screen header visibility and dropdown menu
+        $(window).resize(function(){
+        if ($(window).width() < 768) {
+            $('.small-screen-header').show();
+            $('.large-screen-header').hide();
+        } else {
+            $('.small-screen-header').hide();
+            $('.large-screen-header').show();
+        }
+        });
+
+      </script>
+    <!-- script (Service.js) -->
+    
+  
+      
+</body>
+</html>
